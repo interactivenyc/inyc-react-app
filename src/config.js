@@ -1,3 +1,3 @@
 export default {
-  fbid: 144998123023968
+  fbAppId: 144998123023968
 };

@@ -9,22 +9,46 @@ class NavBar extends Component {
       console.log('[NavBar initial props] ', props);
   }
 
+  componentDidMount() {
+    console.log("componentDidMount");
+  }
+
+
   render() {
+    var display = "";
+
+    if (!this.props.fbResponse.id) {
+      display = (
+      <FacebookLogin
+       appId={this.props.fbAppId}
+       autoLoad={true}
+       fields="name,email,picture"
+       onClick={this.props.componentClicked}
+       callback={this.props.responseFacebook}
+      />)
+    }else{
+      display = (
+        <div>
+        <span style={{color:'white', backgroundColor:'black'}}>{this.props.fbResponse.name}</span>
+        <img src={this.props.fbResponse.picture.data.url} />
+        </div>
+      )
+    }
+
     return (
       <div>
         <div>
           <ul>
-            <li><a href="/home">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/profile">Profile</a></li>
             <li><a href="/addItem">Add Item</a></li>
             <li style={{float:'right'}}>
-              <FacebookLogin
-               appId={this.props.fbid}
-               autoLoad={true}
-               fields="name,email,picture"
-               onClick={this.props.componentClicked}
-               callback={this.props.responseFacebook}
-              />
+
+
+                {display}
+
+
+
             </li>
           </ul>
         </div>
@@ -36,7 +60,8 @@ class NavBar extends Component {
 NavBar.propTypes = {
   responseFacebook: PropTypes.func,
   componentClicked: PropTypes.func,
-  fbid: PropTypes.number
+  fbAppId: PropTypes.number,
+  fbResponse: PropTypes.object
 }
 
 export default NavBar;
