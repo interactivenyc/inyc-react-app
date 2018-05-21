@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import FacebookLogin from 'react-facebook-login';
+import '../index.css';
 
 class NavBar extends Component {
   constructor(props) {
@@ -11,38 +12,31 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <ul className="nav justify-content-end">
-          <li className="nav-item">
-            <a className="nav-link active" href="">Active</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">Link</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">Link</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link disabled" href="/">Disabled</a>
-          </li>
-          <li>
-            <FacebookLogin
-             appId={this.props.fbid}
-             autoLoad={true}
-             fields="name,email,picture"
-             onClick={this.props.componentClicked}
-             callback={this.props.responseFacebook}
-            />
-          </li>
-        </ul>
+        <div>
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/addItem">Add Item</a></li>
+            <li style={{float:'right'}}>
+              <FacebookLogin
+               appId={this.props.fbid}
+               autoLoad={true}
+               fields="name,email,picture"
+               onClick={this.props.componentClicked}
+               callback={this.props.responseFacebook}
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     )
   }
 }
 
-// NavBar.propTypes = {
-//   responseFacebook: PropTypes.function.isRequired,
-//   componentClicked: PropTypes.function.isRequired,
-//   fbid: PropTypes.number
-// }
+NavBar.propTypes = {
+  responseFacebook: PropTypes.func,
+  componentClicked: PropTypes.func,
+  fbid: PropTypes.number
+}
 
 export default NavBar;

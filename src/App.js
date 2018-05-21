@@ -1,35 +1,34 @@
 import React, { Component } from 'react';
-//import ReactDOM from 'react-dom';
 import './App.css';
-import NavBar from './components/NavBar'
-
-const fbid = 144998123023968;
+import NavBar from './components/NavBar';
+import Config from './config';
 
 class App extends Component {
-
+  constructor(props){
+    super(props)
+  }
 
   responseFacebook = (response) => {
-    console.log('responseFacebook');
-    console.log(response);
+    console.log('responseFacebook: ', response);
     this.setState({
       fb_response: response
     });
   }
 
   componentClicked = (response) => {
-    console.log('componentClicked');
-    console.log(this.state.fb_response.id);
+    console.log('componentClicked: ');
   }
 
   render() {
+    console.log('[App] render');
+
     return (
       <div>
         <NavBar
           responseFacebook={this.responseFacebook}
           componentClicked={this.componentClicked}
-          fbid={fbid}
+          fbid={Config.fbid}
         />
-
       </div>
     );
   }
