@@ -8,6 +8,7 @@ class App extends Component {
     super(props);
     this.state = {fb_response:{}};
   }
+
   responseFacebook = (response) => {
     console.log('responseFacebook: ', response);
     this.setState({
