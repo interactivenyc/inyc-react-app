@@ -8,6 +8,20 @@ body {
     background-color: #eeeeee;
 }
 
+.fb_name {
+  float:left;
+  color: white;
+  size: 8em;
+  padding: .5em;
+  line-height:40px;
+  vertical-align: middle;
+}
+
+.fb_image {
+  float:right;
+  padding: .25em;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

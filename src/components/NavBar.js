@@ -28,8 +28,8 @@ class NavBar extends Component {
     } else {
       display = (
         <div>
-          <span style={{ color: 'white', backgroundColor: 'black' }}>{this.props.fbResponse.name}</span>
-          <img alt="" src={this.props.fbResponse.picture.data.url} />
+          <span className="fb_name">{this.props.fbResponse.name}</span>
+          <span className="fb_image"><img alt="" src={this.props.fbResponse.picture.data.url} /></span>
         </div>
       );
     }
