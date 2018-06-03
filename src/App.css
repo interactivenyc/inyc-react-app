@@ -1,6 +1,6 @@
 /* GLOBAL */
 
-#root {
+:root {
   --someVariable: 10px;
 }
 
