@@ -8,9 +8,9 @@ class StyledTable extends Component {
         <table>
           <thead>
             <tr>
-              <th>Item Name</th>
-              <th>Quantity</th>
-              <th>Price</th>
+              <th className="col-item-name">Item Name</th>
+              <th className="col-quantity">Quantity</th>
+              <th className="col-price">Price</th>
             </tr>
           </thead>
           <tbody>

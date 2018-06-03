@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import TopNav from './components/TopNav';
+import './App.css';
+
+// ALL EXAMPLE FILES HERE
 import StyledTable from './components/examples/StyledTable';
 import ImageOverlay from './components/examples/ImageOverlay';
 
