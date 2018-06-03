@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import TopNav from './components/TopNav';
 import StyledTable from './components/examples/StyledTable';
-import './css/examples/ImageOverlay.css';
+import ImageOverlay from './components/examples/ImageOverlay';
+
 
 class App extends Component {
   render() {

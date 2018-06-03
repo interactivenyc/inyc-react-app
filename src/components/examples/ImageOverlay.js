@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../css/examples/ImageOverlay.css';
 
 class ImageOverlay extends Component {
   render() {

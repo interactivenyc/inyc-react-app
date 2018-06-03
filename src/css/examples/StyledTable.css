@@ -1,0 +1,6 @@
+.styled-table table th {
+  text-align: left;
+  background-color: green;
+  color: #ccc;
+  text-shadow: 2px 2px 0 rgba(0,0,0,.7);
+}
