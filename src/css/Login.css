@@ -15,3 +15,17 @@
   color: white;
   background-color: #999;
 }
+
+.fb_name {
+  color: red;
+  padding-right: 10px;
+  padding-top: var(--navTopMargin);
+  float: left;
+}
+
+.fb_image img{
+  width: 36px;
+  height: 36px;
+  padding: 5px;
+  float: left;
+}
