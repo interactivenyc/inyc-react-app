@@ -1,26 +1,17 @@
 import React, { Component } from 'react';
+import TopNav from './components/TopNav';
+import StyledTable from './components/examples/StyledTable';
+import './css/examples/ImageOverlay.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
 
-        <div className="nav-container">
+        <TopNav/>
 
-          <div className="logo">LOGO</div>
-
-          <nav className="site-nav">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Profile</a></li>
-              <li><a href="/">Upload</a></li>
-            </ul>
-          </nav>
-
-          <div className="login">
-            <a href="/">LOGIN</a>
-          </div>
-
+        <div className="content">
+          <StyledTable/>
         </div>
 
       </div>
