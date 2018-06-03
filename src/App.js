@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
 import TopNav from './components/TopNav';
+import Home from './components/Home';
 import './App.css';
 
 // ALL EXAMPLE FILES HERE
@@ -15,7 +22,13 @@ class App extends Component {
         <TopNav/>
 
         <div className="content">
-          <StyledTable/>
+          <Router>
+              <div>
+                <Route exact path="/" component={Home} />
+                <Route path="/StyledTable" component={StyledTable} />
+                <Route path="/ImageOverlay" component={ImageOverlay} />
+              </div>
+            </Router>
         </div>
 
       </div>

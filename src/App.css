@@ -1,7 +1,7 @@
 /* GLOBAL */
 
 :root {
-  --someVariable: 10px;
+  --navTopMargin: 14px;
 }
 
 /* CONTENT */
@@ -12,7 +12,7 @@
   position: relative;
   top: 50px;
   width: 100%;
-  padding: var(--navTopMargin) 4em;
+  padding: 14px 4em;
 }
 
 

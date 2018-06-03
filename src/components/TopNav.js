@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Login from './Login';
 import '../css/TopNav.css';
 
 class TopNav extends Component {
@@ -6,18 +7,18 @@ class TopNav extends Component {
     return (
       <div className="nav-container">
 
-        <div className="logo">LOGO</div>
+        <div className="logo">InteractiveNYC</div>
 
         <nav className="site-nav">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/">Profile</a></li>
-            <li><a href="/">Upload</a></li>
+            <li><a href="/StyledTable">StyledTable</a></li>
+            <li><a href="/ImageOverlay">ImageOverlay</a></li>
           </ul>
         </nav>
 
         <div className="login">
-          <a href="/">LOGIN</a>
+          <Login />
         </div>
 
       </div>
