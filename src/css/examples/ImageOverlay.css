@@ -1,11 +1,9 @@
-/* GLOBAL */
+/* IMAGE OVERLAY */
 
-img {
+.image-banner img {
   max-width: 80%;
   height: auto;
 }
-
-/* IMAGE OVERLAY */
 
 .image-banner {
   position: relative;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Login from './Login';
+import ExamplesMenu from './ExamplesMenu';
 import '../css/TopNav.css';
 
 class TopNav extends Component {
@@ -12,8 +13,7 @@ class TopNav extends Component {
         <nav className="site-nav">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/StyledTable">StyledTable</a></li>
-            <li><a href="/ImageOverlay">ImageOverlay</a></li>
+            <li><ExamplesMenu /></li>
           </ul>
         </nav>
 
