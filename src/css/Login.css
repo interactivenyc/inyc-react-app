@@ -3,7 +3,7 @@
 }
 
 .login a {
-  color: black;
+  color: var(--green-xl);
   text-decoration: none;
   display: block;
   height: 46px;
@@ -22,7 +22,7 @@
 }
 
 .fb_name {
-  color: black;
+  color: var(--green-xl);
   padding-right: 10px;
   padding-top: var(--navTopMargin);
   float: left;

@@ -10,29 +10,27 @@
 
 /* Dropdown Button */
 .example-button {
+    color: var(--green-xl);
+    transition: color .5s;
     background-color: transparent;
+    transition: background-color 1s;
     outline: none;
-    color: black;
     font-size: 80%;
     display: block;
     text-decoration: none;
     padding: 17px 10px;
     height: 46px;
     box-sizing: border-box;
-    transition: background-color 1s;
-    transition: color .5s;
-    /* border: 0; */
     border-style: none;
 }
 
 /* Dropdown button on hover & focus */
-.examplebtnclass:hover,
-.examplebtnclass:focus {
-    /* background-color: var(--greenDark); */
-    color: white;
-    background-color: #999;
-    transition: background-color 1s;
-    transition: color .5s;
+.example-button:hover,
+.example-button:focus {
+  color: var(--green-d);
+  transition: color .5s;
+  background-color: var(--green-xl);
+  transition: background-color 1s;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -45,7 +43,7 @@
 .example-dropdown-content {
     display: none;
     position: absolute;
-    background-color:var(--greenMedium);
+    background-color:var(--green-m);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -53,7 +51,7 @@
 
 /* Links inside the dropdown */
 .example-dropdown-content a {
-    /* color: white; */
+    color: black;
     padding: 10px 14px;
     text-decoration: none;
     font-size: 14px;

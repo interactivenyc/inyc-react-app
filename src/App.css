@@ -8,10 +8,35 @@
   --greenVeryDark: #535e38;
   --greyLight: #ececec;
   --greyMedium: #ccc;
+
+  --green-xl: #E1E9DA;
+  --green-l: #94AC7F;
+  --green-m: #5B7742;
+  --green-d: #385B19;
+  --green-dd: #1B3900;
+
+  --orange-xl: #FFF3EE;
+  --orange-l: #C19E8E;
+  --orange-m: #865D4A;
+  --orange-d: #66331C;
+  --orange-dd: #3F1400;
+
+  --red-xl: #D5C7CF;
+  --red-l: #997188;
+  --red-m: #6A3B57;
+  --red-d: #511639;
+  --red-dd: #32001E;
+
+  --blue-xl: #ACB2B7;
+  --blue-l: #5E6E7C;
+  --blue-m: #324656;
+  --blue-d: #152E42;
+  --blue-dd: #021729;
+
 }
 
 html {
-  background-color: var(--greenLight);
+  background-color: var(--green-xl);
 }
 
 body {
