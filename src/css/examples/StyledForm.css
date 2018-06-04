@@ -1,0 +1,70 @@
+/* STYLED FORM */
+
+.styled-form form {
+  background-color: var(--greyMedium);
+  padding: 30px 40px;
+  width: 70%;
+}
+
+.styled-form input,
+.styled-form select {
+  font-family: Tahoma, sans-serif;
+  font-size: 100%;
+}
+
+.styled-form input[type="email"],
+.styled-form input[type="password"],
+.styled-form select {
+  width: 100%;
+  height: 40px;
+  display: block;
+  padding: 0 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.styled-form input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--greenMedium);
+  color: white;
+  padding: 10px 0;
+  border: 1px solid #798a56;
+  border-radius: 5px;
+}
+
+.styled-form input[type="submit"]:hover,
+.styled-form input[type="submit"]:focus {
+  outline: none;
+  border: 1px solid var(--greenVeryDark);
+  background-color: var(--greenDark)
+}
+
+.styled-form input[type="email"]:focus,
+.styled-form input[type="password"]:focus {
+  outline: none;
+  border: 1px solid var(--greenMedium);
+  box-shadow: inset 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.styled-form label {
+  text-align: left;
+}
+
+.styled-form .checkbox-text {
+  color: grey;
+  font-size: 80%;
+}
+
+.hidden-label {
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}

@@ -12,6 +12,7 @@ import './App.css';
 // ALL EXAMPLE FILES HERE
 import StyledTable from './components/examples/StyledTable';
 import ImageOverlay from './components/examples/ImageOverlay';
+import StyledForm from './components/examples/StyledForm';
 
 
 class App extends Component {
@@ -24,7 +25,7 @@ class App extends Component {
         <div className="content">
           <Router>
               <div>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={StyledForm} />
                 <Route path="/StyledTable" component={StyledTable} />
                 <Route path="/ImageOverlay" component={ImageOverlay} />
               </div>

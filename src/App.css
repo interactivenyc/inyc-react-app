@@ -2,6 +2,22 @@
 
 :root {
   --navTopMargin: 14px;
+  --greenLight: #d1deb7;
+  --greenMedium: #869960;
+  --greenDark: #677747;
+  --greenVeryDark: #535e38;
+  --greyLight: #ececec;
+  --greyMedium: #ccc;
+}
+
+html {
+  background-color: var(--greenLight);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
 }
 
 /* CONTENT */
@@ -14,13 +30,6 @@
   width: 100%;
   padding: 14px 4em;
 }
-
-
-
-
-
-
-
 
 
 /* CLEAR FLOAT UTILITIES */
@@ -46,7 +55,7 @@
 /* DEFAULT CSS FROM CREATE-REACT-APP */
 
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {

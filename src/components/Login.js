@@ -16,23 +16,21 @@ class Login extends Component {
     });
   }
 
-  componentClicked = (response) => {
-    console.log('componentClicked: ');
-  }
-
   render() {
 
     let display = '';
 
     if (!this.state.fb_response.id) {
       display = (
-        <FacebookLogin
-          appId={Config.fbAppId}
-          autoLoad
-          fields="name,email,picture"
-          onClick={this.componentClicked}
-          callback={this.responseFacebook}
-        />)
+        <div className="fb_login">
+          <FacebookLogin
+            appId={Config.fbAppId}
+            autoLoad
+            fields="name,email,picture"
+            callback={this.responseFacebook}
+          />
+        </div>
+      )
     } else {
       display = (
         <div>
