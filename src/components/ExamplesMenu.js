@@ -1,9 +1,10 @@
 import React from 'react';
 import '../css/ExamplesMenu.css';
 
-window.onclick = function(event) {
-  if (!event.target.matches('.example-button')) {
+window.addEventListener("click", clickOutside);
 
+function clickOutside(event) {
+  if (!event.target.matches('.example-button')) {
     var dropdowns = document.getElementsByClassName("example-dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -15,8 +16,7 @@ window.onclick = function(event) {
   }
 }
 
-const onClickExample = () => {
-  console.log('click');
+function onClickExample(event) {
   document.getElementById("example-dropdown").classList.toggle("show");
 }
 

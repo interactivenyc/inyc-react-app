@@ -1,9 +1,11 @@
 import React from 'react';
 import '../../css/examples/DropdownMenu.css';
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
 
+window.addEventListener("click", clickOutside);
+
+function clickOutside(event) {
+  if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -15,8 +17,7 @@ window.onclick = function(event) {
   }
 }
 
-const onClick = () => {
-  console.log('click');
+function onClick(event) {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
