@@ -1,7 +1,7 @@
 /* IMAGE OVERLAY */
 
 .image-banner img {
-  max-width: 80%;
+  max-width: 750px;
   height: auto;
 }
 
@@ -21,6 +21,6 @@
   background-color: rgba(0,0,0,.5);
   padding: 1em;
   text-align: center;
-  max-width: 80%;
+  max-width: 750px;
   box-sizing: border-box;
 }
