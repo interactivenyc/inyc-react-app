@@ -16,8 +16,10 @@
 }
 
 .styled-table table tbody tr:nth-child(even) td {
-  background-color: #e5e9dc;
+  background-color: var(--green-l);
 }
+
+
 
 /*  not sure why we need the space before the colon here */
 .styled-table table tr :nth-child(1) {
@@ -31,14 +33,14 @@
 
 .styled-table table th {
   text-align: left;
-  background-color: #869960;
+  background-color: var(--green-m);
   color: #fff;
   text-shadow: 2px 2px 0 rgba(0,0,0,.7);
 }
 
 .styled-table table th,
 .styled-table table td {
-  border: 1px solid #869960;
+  border: 1px solid var(--green-d);
   padding: 10px;
   vertical-align: top;
 }

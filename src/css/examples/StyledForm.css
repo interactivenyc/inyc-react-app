@@ -1,7 +1,7 @@
 /* STYLED FORM */
 
 .styled-form form {
-  background-color: var(--greyMedium);
+  background-color: var(--green-l);
   padding: 30px 40px;
   width: 70%;
 }
@@ -31,8 +31,8 @@
   height: 40px;
   display: block;
   box-sizing: border-box;
-  background-color: var(--greenMedium);
-  color: white;
+  background-color: var(--green-d);
+  color: var(--green-xl);
   padding: 10px 0;
   border: 1px solid #798a56;
   border-radius: 5px;
@@ -41,14 +41,14 @@
 .styled-form input[type="submit"]:hover,
 .styled-form input[type="submit"]:focus {
   outline: none;
-  border: 1px solid var(--greenVeryDark);
-  background-color: var(--greenDark)
+  border: 1px solid var(--green-dd);
+  background-color: var(--green-m)
 }
 
 .styled-form input[type="email"]:focus,
 .styled-form input[type="password"]:focus {
   outline: none;
-  border: 1px solid var(--greenMedium);
+  border: 1px solid var(--green-m);
   box-shadow: inset 2px 2px 2px rgba(0,0,0,.2);
 }
 
@@ -57,7 +57,7 @@
 }
 
 .styled-form .checkbox-text {
-  color: grey;
+  color: var(--green-d);
   font-size: 80%;
 }
 
