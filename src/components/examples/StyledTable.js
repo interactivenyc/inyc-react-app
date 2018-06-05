@@ -4,6 +4,8 @@ import '../../css/examples/StyledTable.css';
 const StyledTable = () => {
   return (
     <div className="styled-table">
+      <div className="code-view-link"><a href="https://codepen.io/steve-warren/pen/jKWVzM" target="_blank">View the code on codepen.io</a></div>
+
       <table>
         <thead>
           <tr>

@@ -24,7 +24,7 @@ function onClick(event) {
 const DropdownMenu = () => {
   return (
     <div className="dropdown-menu">
-
+      <div className="code-view-link"><a href="https://codepen.io/steve-warren/pen/bKEXRj" target="_blank">View the code on codepen.io</a></div>
       <div className="dropdown">
         <button onClick={onClick} className="dropbtn">Dropdown</button>
         <div id="myDropdown" className="dropdown-content">
@@ -33,7 +33,6 @@ const DropdownMenu = () => {
           <a href="">Link 3</a>
         </div>
       </div>
-
     </div>
   );
 }

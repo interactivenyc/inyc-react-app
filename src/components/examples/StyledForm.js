@@ -10,6 +10,7 @@ function onChange(event) {
 const StyledForm = () => {
   return (
     <div className="styled-form">
+      <div className="code-view-link"><a href="https://codepen.io/steve-warren/pen/xzZdwX" target="_blank">View the code on codepen.io</a></div>
 
       <form>
         <label className="hidden-label" htmlFor="email">Email</label>
