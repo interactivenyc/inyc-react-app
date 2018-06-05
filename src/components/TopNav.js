@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Login from './Login';
 import ExamplesMenu from './ExamplesMenu';
 import '../css/TopNav.css';
@@ -12,7 +13,7 @@ class TopNav extends Component {
 
         <nav className="site-nav">
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><Link to="/">Home</Link></li>
             <li><ExamplesMenu /></li>
           </ul>
         </nav>
