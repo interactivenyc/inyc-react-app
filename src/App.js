@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route
 } from 'react-router-dom';
 
@@ -15,27 +15,24 @@ import DropdownMenu from './components/examples/DropdownMenu';
 
 import './App.css';
 
-
-
 class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <TopNav/>
-
-        <div className="content">
-          <Router>
-              <div>
+        <div>
+          <BrowserRouter>
+            <div>
+              <TopNav/>
+              <div className="content">
                 <Route exact path="/" component={Home} />
                 <Route path="/StyledTable" component={StyledTable} />
                 <Route path="/StyledForm" component={StyledForm} />
                 <Route path="/ImageOverlay" component={ImageOverlay} />
                 <Route path="/DropdownMenu" component={DropdownMenu} />
               </div>
-            </Router>
+            </div>
+          </BrowserRouter>
         </div>
-
       </div>
     );
   }

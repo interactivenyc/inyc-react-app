@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import '../css/ExamplesMenu.css';
 
 window.addEventListener("click", clickOutside);
@@ -27,10 +29,10 @@ const ExamplesMenu = () => {
       <div className="example-dropdown">
         <button onClick={onClickExample} className="example-button">Examples</button>
         <div id="example-dropdown" className="example-dropdown-content">
-          <a href="/ImageOverlay">ImageOverlay</a>
-          <a href="/StyledTable">StyledTable</a>
-          <a href="/StyledForm">StyledForm</a>
-          <a href="/DropdownMenu">DropdownMenu</a>
+          <Link to="/ImageOverlay">ImageOverlay</Link>
+          <Link to="/StyledTable">StyledTable</Link>
+          <Link to="/StyledForm">StyledForm</Link>
+          <Link to="/DropdownMenu">DropdownMenu</Link>
         </div>
       </div>
 
