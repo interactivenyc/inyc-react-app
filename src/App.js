@@ -12,6 +12,7 @@ import StyledTable from './components/examples/StyledTable';
 import ImageOverlay from './components/examples/ImageOverlay';
 import StyledForm from './components/examples/StyledForm';
 import DropdownMenu from './components/examples/DropdownMenu';
+import ResponsiveGrid from './components/examples/ResponsiveGrid';
 
 import './App.css';
 
@@ -29,6 +30,7 @@ class App extends Component {
                 <Route path="/StyledForm" component={StyledForm} />
                 <Route path="/ImageOverlay" component={ImageOverlay} />
                 <Route path="/DropdownMenu" component={DropdownMenu} />
+                <Route path="/ResponsiveGrid" component={ResponsiveGrid} />
               </div>
             </div>
           </BrowserRouter>
