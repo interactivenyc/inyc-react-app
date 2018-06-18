@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter,
-  Route
+  Route,
 } from 'react-router-dom';
 
 import TopNav from './components/TopNav';
@@ -13,6 +13,7 @@ import ImageOverlay from './components/examples/ImageOverlay';
 import StyledForm from './components/examples/StyledForm';
 import DropdownMenu from './components/examples/DropdownMenu';
 import ResponsiveGrid from './components/examples/ResponsiveGrid';
+import Slideshow from './components/examples/Slideshow';
 
 import './App.css';
 
@@ -23,7 +24,7 @@ class App extends Component {
         <div>
           <BrowserRouter>
             <div>
-              <TopNav/>
+              <TopNav />
               <div className="content">
                 <Route exact path="/" component={Home} />
                 <Route path="/StyledTable" component={StyledTable} />
@@ -31,6 +32,7 @@ class App extends Component {
                 <Route path="/ImageOverlay" component={ImageOverlay} />
                 <Route path="/DropdownMenu" component={DropdownMenu} />
                 <Route path="/ResponsiveGrid" component={ResponsiveGrid} />
+                <Route path="/Slideshow" component={Slideshow} />
               </div>
             </div>
           </BrowserRouter>

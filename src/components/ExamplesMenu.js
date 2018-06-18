@@ -33,6 +33,7 @@ const ExamplesMenu = () => (
         <Link to="/StyledForm">StyledForm</Link>
         <Link to="/DropdownMenu">DropdownMenu</Link>
         <Link to="/ResponsiveGrid">ResponsiveGrid</Link>
+        <Link to="/Slideshow">Slideshow</Link>
       </div>
     </div>
 

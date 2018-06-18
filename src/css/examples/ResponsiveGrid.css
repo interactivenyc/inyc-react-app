@@ -1,5 +1,5 @@
 .responsive-grid {
-  width: 95%;
+  width: 100%;
   align: center;
   box-sizing: border-box;
 }
@@ -12,6 +12,7 @@
 .responsive-grid h6,
 .responsive-grid p {
   margin-top: 0;
+
 }
 
 .responsive-grid img {
@@ -24,9 +25,10 @@
 }
 
 /* Main Column Typography */
-.responsive-grid .main-area h2 {
+.responsive-grid h2 {
   font-size: 165%;
   font-weight: normal;
+  color: var(--green-m);
 }
 
 .responsive-grid .section {
@@ -59,7 +61,7 @@
 
 .responsive-grid header {
   padding-top: 20px;
-  color: #fff;
+  color:  var(--green-xl);
   background-color: var(--green-m);
 }
 
@@ -92,13 +94,13 @@
 
 .responsive-grid .site-nav a {
   display: block;
-  color: #fff;
+  color: var(--green-xl);
   padding: 10px 20px;
-  background-color: #365267;
+  background-color: var(--green-d);
 }
 
 .responsive-grid .site-nav a:hover {
-  background-color: #2c465a;
+  background-color:  var(--green-xl);
 }
 
 @media screen and (max-width: 1023px) {
@@ -108,6 +110,7 @@
   }
 
   .responsive-grid .site-nav a {
+
     padding: 15px 0;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -143,7 +146,7 @@
 }
 
 .responsive-grid .sidebar {
-  color: #999;
+  color: var(--green-m);
   font-size: 85%;
 }
 
@@ -166,9 +169,10 @@
 }
 
 .responsive-grid .box-a {
-  background-color: #e7eff5;
+  color: var(--green-m);
+  background-color: var(--green-xl);
   padding: 20px 20px 0 20px;
-  border: 2px solid #d3dee7;
+  border: 1px solid var(--green-l);
   margin-bottom: 30px;
 }
 

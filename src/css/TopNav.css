@@ -16,6 +16,12 @@
   padding: var(--navTopMargin) 4em;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2){
+  .logo {
+    padding: var(--navTopMargin) 1em;
+  }
+}
+
 .site-nav {
   float: left;
   display: block;

@@ -1,19 +1,20 @@
 /* IMAGE OVERLAY */
 
-.image-banner img {
+.image-overlay .image-banner img {
+  width: 100%;
   max-width: 750px;
   height: auto;
-}
-
-.image-banner {
-  position: relative;
-}
-
-.image-banner img {
   display: block;
 }
 
-.banner-description {
+.image-overlay .image-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.image-overlay .banner-description {
   position:absolute;
   bottom: 0;
   left: 0;
@@ -21,6 +22,7 @@
   background-color: rgba(0,0,0,.5);
   padding: 1em;
   text-align: center;
+  width: 100%;
   max-width: 750px;
   box-sizing: border-box;
 }
