@@ -1,0 +1,10 @@
+.hamburger-menu {
+  background-color: var(--green-d);
+}
+
+.hamburger {
+    width: 26px;
+    height: 4px;
+    background-color: var(--green-xl);
+    margin: 6px 6px;
+}

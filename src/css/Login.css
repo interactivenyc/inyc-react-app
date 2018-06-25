@@ -1,5 +1,7 @@
 .login {
   float: right;
+  height: 46px;
+  overflow: hidden;
 }
 
 .login a {

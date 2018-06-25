@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Login from './Login';
 import ExamplesMenu from './ExamplesMenu';
+import HamburgerMenu from './HamburgerMenu';
 import '../css/TopNav.css';
 
 class TopNav extends Component {
@@ -11,16 +12,27 @@ class TopNav extends Component {
 
         <div className="logo">InteractiveNYC</div>
 
-        <nav className="site-nav">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><ExamplesMenu /></li>
-          </ul>
-        </nav>
+        <div className="site-nav-container">
 
-        <div className="login">
-          <Login />
+          <div className="site-nav-lg">
+            <nav className="site-nav">
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><ExamplesMenu /></li>
+              </ul>
+            </nav>
+
+            <div className="login">
+              <Login />
+            </div>
+          </div>
+
+          <div className="site-nav-sm">
+            <HamburgerMenu />
+          </div>
+
         </div>
+
 
       </div>
     );

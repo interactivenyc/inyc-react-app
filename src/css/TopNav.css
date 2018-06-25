@@ -16,11 +16,29 @@
   padding: var(--navTopMargin) 4em;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2){
+.site-nav-sm {
+  display: none;
+  padding: 6px;
+  float: right;
+}
+
+
+
+/* @media screen and (-webkit-min-device-pixel-ratio: 2){ */
+@media screen and (max-width: 540px) {
   .logo {
     padding: var(--navTopMargin) 1em;
   }
+
+  .site-nav-lg {
+    display: none;
+  }
+  .site-nav-sm {
+    display: block;
+  }
 }
+
+
 
 .site-nav {
   float: left;
