@@ -1,10 +1,56 @@
 .hamburger-menu {
+  padding: 5px;
+  float: right;
+}
+
+.hamburger-menu-bg {
   background-color: var(--green-d);
 }
 
-.hamburger {
+.hamburger-menu-bg:hover {
+  background-color: var(--green-l);
+}
+
+.hamburger-icon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  filter: invert(47%) sepia(47%) saturate(1804%) hue-rotate(160deg) brightness(93%) contrast(101%);
+}
+
+
+.test {
+  /* Keyword values */
+mix-blend-mode: normal;
+mix-blend-mode: multiply;
+mix-blend-mode: screen;
+mix-blend-mode: overlay;
+mix-blend-mode: darken;
+mix-blend-mode: lighten;
+mix-blend-mode: color-dodge;
+mix-blend-mode: color-burn;
+mix-blend-mode: hard-light;
+mix-blend-mode: soft-light;
+mix-blend-mode: difference;
+mix-blend-mode: exclusion;
+mix-blend-mode: hue;
+mix-blend-mode: saturation;
+mix-blend-mode: color;
+mix-blend-mode: luminosity;
+}
+
+.hamburger-lines {
     width: 26px;
     height: 4px;
     background-color: var(--green-xl);
     margin: 6px 6px;
+}
+
+
+.hamburger-menu-icon:hover {
+  background-color: var(--green-dd);
+}
+
+.hamburger-dropdown-content {
+  display: none;
 }

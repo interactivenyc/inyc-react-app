@@ -18,14 +18,12 @@
 
 .site-nav-sm {
   display: none;
-  padding: 6px;
-  float: right;
 }
 
 
 
 /* @media screen and (-webkit-min-device-pixel-ratio: 2){ */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 767px) {
   .logo {
     padding: var(--navTopMargin) 1em;
   }
